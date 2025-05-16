@@ -11,4 +11,5 @@
   --main-width: clamp(375px, 100%, 700px);
   --contour-color: #000;
   --main-body-color: #ff0000;
+  --fat-font-weight: 700;
 }

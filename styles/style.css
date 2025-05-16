@@ -8,7 +8,6 @@
   flex-direction: column;
   background-image: var(--bg-image);
   background-size: cover;
-  font-variation-settings: 'wght' 400;
 }
 .header {
   display: flex;
@@ -72,7 +71,7 @@
 }
 .card-title {
   font-family: Inter;
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' var(--fat-font-weight);
   font-size: 18px;
   line-height: 100%;
   padding: 3px 10px;
