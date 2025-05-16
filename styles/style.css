@@ -2,7 +2,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--accent-font);
-  font-variation-settings: var(--main-font-weight);
+  font-variation-settings: 'wght' var(--main-font-weight);
   display: flex;
   align-items: center;
   flex-direction: column;
