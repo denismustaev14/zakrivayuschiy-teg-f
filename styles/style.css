@@ -32,7 +32,6 @@
   margin-block-end: 120px;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 23px;
   line-height: 100%;
 }
 .content {
@@ -88,10 +87,20 @@
   font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  text-shadow: -1px 0 var(--main-bg-color), 0 1px var(--main-bg-color),
-    1px 0 var(--main-bg-color), 0 -1px var(--main-bg-color);
+
+  text-shadow: -1px 0 var(--main-bg-color), 
+                0 1px var(--main-bg-color),
+                1px 0 var(--main-bg-color), 
+                0 -1px var(--main-bg-color);
   mix-blend-mode: hard-light;
 }
+@supports (text-stroke: 0.5px var(--main-bg-color)) or (-webkit-text-stroke: 0.5px var(--main-bg-color)) {
+  .card-image-label {
+      text-shadow: none;
+      -webkit-text-stroke: 0.5px var(--main-bg-color);
+      text-stroke: 0.5px var(--main-bg-color);
+    }
+  }
 .card-image-wrap {
   display: flex;
   justify-content: flex-end;
