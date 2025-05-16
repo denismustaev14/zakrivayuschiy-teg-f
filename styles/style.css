@@ -2,7 +2,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--accent-font);
-  font-variation-settings: 'wght' var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -26,14 +26,14 @@
   text-decoration: none;
   margin-block-start: 130px;
 }
-@media (width <= 376px){
-  .header-title{
+@media (width <= 376px) {
+  .header-title {
     font-size: 49px;
   }
-  .header-text{
+  .header-text {
     font-size: 14px;
   }
-  .save-button{
+  .save-button {
     flex-direction: column;
   }
 }
@@ -82,7 +82,7 @@
 }
 .card-title {
   font-family: Inter;
-  font-variation-settings: 'wght' var(--fat-font-weight);
+  font-variation-settings: "wght" var(--fat-font-weight);
   font-size: 18px;
   line-height: 100%;
   padding: 3px 10px;
@@ -99,19 +99,18 @@
   font-size: 14px;
   line-height: 14px;
 
-  text-shadow: -1px 0 var(--main-bg-color), 
-                0 1px var(--main-bg-color),
-                1px 0 var(--main-bg-color), 
-                0 -1px var(--main-bg-color);
+  text-shadow: -1px 0 var(--main-bg-color), 0 1px var(--main-bg-color),
+    1px 0 var(--main-bg-color), 0 -1px var(--main-bg-color);
   mix-blend-mode: hard-light;
 }
-@supports (text-stroke: 0.5px var(--main-bg-color)) or (-webkit-text-stroke: 0.5px var(--main-bg-color)) {
+@supports (text-stroke: 0.5px var(--main-bg-color)) or
+  (-webkit-text-stroke: 0.5px var(--main-bg-color)) {
   .card-image-label {
-      text-shadow: none;
-      -webkit-text-stroke: 0.5px var(--main-bg-color);
-      text-stroke: 0.5px var(--main-bg-color);
-    }
+    text-shadow: none;
+    -webkit-text-stroke: 0.5px var(--main-bg-color);
+    text-stroke: 0.5px var(--main-bg-color);
   }
+}
 .card-image-wrap {
   display: flex;
   justify-content: flex-end;
