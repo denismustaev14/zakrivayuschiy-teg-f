@@ -15,7 +15,7 @@
   align-items: center;
   font-family: var(--main-font);
   margin-block-start: 100px;
-  margin-block-end: 100px;
+  margin-block-end: 105px;
   background-color: var(--main-bg-color);
   border: 2px solid var(--main-border-color);
   height: 100%;
@@ -24,12 +24,23 @@
 .header-title {
   font-size: 65px;
   text-decoration: none;
-  margin-block-start: 120px;
+  margin-block-start: 130px;
+}
+@media (width <= 376px){
+  .header-title{
+    font-size: 49px;
+  }
+  .header-text{
+    font-size: 14px;
+  }
+  .save-button{
+    flex-direction: column;
+  }
 }
 .header-text {
   font-size: 23px;
   margin-block-start: 20px;
-  margin-block-end: 120px;
+  margin-block-end: 125px;
   text-transform: uppercase;
   font-weight: 400;
   line-height: 100%;
@@ -45,7 +56,7 @@
   border: 2px solid var(--main-border-color);
   width: 100%;
   box-sizing: content-box;
-  margin-block-end: 52px;
+  margin-block-end: 54px;
 }
 .card_grayscale-filters {
   filter: grayscale(0.8);
@@ -82,7 +93,7 @@
   position: absolute;
   top: 50px;
   z-index: 1;
-  inset: 25px 25px auto auto;
+  inset: 30px 29px auto auto;
   opacity: 50%;
   font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
@@ -106,6 +117,7 @@
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 1;
 }
 .card-text {
   font-family: Inter;
@@ -113,7 +125,7 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0%;
-  padding: 25px;
+  padding: 27px;
 }
 .text {
   margin-block-end: 27px;
@@ -121,8 +133,7 @@
 .card-button {
   display: flex;
   justify-content: flex-end;
-  margin: 0px 25px 25px;
-  gap: 12px;
+  margin: 0px 27px 20px;
 }
 .card__like-button {
   border: 2px solid var(--main-border-color);
