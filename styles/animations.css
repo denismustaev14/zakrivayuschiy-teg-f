@@ -10,70 +10,71 @@
 
 */
 .card__icon-button:hover .core {
-    fill: var(--contour-color);
-    transition: fill linear 0.3s;
+  fill: var(--contour-color);
+  transition: fill linear 0.3s;
+}
+.card__icon-button:hover .main-body {
+  fill: var(--contour-color);
+  transition: fill linear 0.3s 0.05s;
+}
+.card__icon-button:not(:hover) .core {
+  fill: transparent;
+  transition: fill linear 0.3s 0.05s;
+}
+.card__icon-button:not(:hover) .main-body {
+  fill: transparent;
+  transition: fill linear 0.3s;
+}
+.card__icon-button:active .core {
+  fill: var(--main-body-color);
+  transition: fill linear 0.3s;
+}
+.card__icon-button:active .main-body {
+  fill: var(--main-body-color);
+  transition: fill linear 0.3s 0.06s;
+}
+.card__icon-button .is-liked {
+  animation: 1 ease-in 0.3s 0.1s alternate;
+}
+.card__icon-button .is-liked .contour {
+  fill: var(--main-body-color);
+  transition: fill linear 0.3s 0.06s;
+}
+.card__icon-button .is-liked .main-body {
+  fill: var(--main-body-color);
+  transition: fill linear 0.3s 0.06s;
+}
+.card__icon-button .is-liked .core {
+  fill: var(--main-body-color);
+  transition: fill linear 0.3s;
+}
+.card__icon-button .is-liked .heart {
+  animation: scale 0.3s 0.1s ease-in 1;
+  transform-origin: center;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
   }
-  .card__icon-button:hover .main-body {
-    fill: var(--contour-color);
-    transition: fill linear 0.3s 0.05s;
+  50% {
+    transform: scale(1.25);
   }
-  .card__icon-button:not(:hover) .core {
-    fill: transparent;
-    transition: fill linear 0.3s 0.05s;
+  100% {
+    transform: scale(1);
   }
-  .card__icon-button:not(:hover) .main-body {
-    fill: transparent;
-    transition: fill linear 0.3s;
+}
+.card__icon-button .is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in 1;
+}
+@keyframes sparks {
+  from {
+    opacity: 0;
   }
-  .card__icon-button:active .core {
-    fill: var(--main-body-color);
-    transition: fill linear 0.3s;
+  to {
+    opacity: 1;
   }
-  .card__icon-button:active .main-body {
-    fill: var(--main-body-color);
-    transition: fill linear 0.3s 0.06s;
-  }
-  .card__icon-button .is-liked {
-    animation: 1 ease-in 0.3s 0.1s alternate;
-  }
-  .card__icon-button .is-liked .contour {
-    fill: var(--main-body-color);
-    transition: fill linear 0.3s 0.06s;
-  }
-  .card__icon-button .is-liked .main-body {
-    fill: var(--main-body-color);
-    transition: fill linear 0.3s 0.06s;
-  }
-  .card__icon-button .is-liked .core {
-    fill: var(--main-body-color);
-    transition: fill linear 0.3s;
-  }
-  .card__icon-button .is-liked .heart {
-    animation: scale 0.3s 0.1s ease-in 1;
-    transform-origin: center;
-  }
-  @keyframes scale {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.25);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .card__icon-button .is-liked .sparks {
-    animation: sparks 0.3s 0.3s ease-in 1;
-  }
-  @keyframes sparks {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .contour{
-    fill: var(--contour-color);
-    transition: fill linear 0.1s}
+}
+.contour {
+  fill: var(--contour-color);
+  transition: fill linear 0.1s;
+}

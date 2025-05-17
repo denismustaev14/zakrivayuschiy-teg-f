@@ -9,7 +9,7 @@
   background-image: var(--bg-image);
   background-color: #fff;
   background-size: cover;
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 .header {
   display: flex;
@@ -29,7 +29,7 @@
   margin-block-start: 130px;
 }
 .header-text {
-  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);;
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   margin-block-start: 20px;
   margin-block-end: 125px;
   text-transform: uppercase;
@@ -224,7 +224,7 @@ button:focus {
 .floppy {
   color: var(--contour-color);
 }
-.window-button__text{
+.window-button__text {
   text-transform: uppercase;
 }
 dialog::backdrop {
@@ -237,25 +237,25 @@ dialog::backdrop {
 @media (width <= 376px) {
   .header-title {
     font-size: 49px;
-    margin-block-start:120px ;
+    margin-block-start: 120px;
   }
   .header-text {
     font-size: 14px;
-    margin-block-end:120px ;
+    margin-block-end: 120px;
   }
-  .card-text{
+  .card-text {
     padding: 25px 28px;
   }
   .save-button {
     flex-direction: column;
   }
-  .card-title{
+  .card-title {
     padding: 4px, 10px, 6px, 10px;
   }
-  .button-floppy{
+  .button-floppy {
     width: 28px;
   }
-  .text-window{
+  .text-window {
     max-width: 198px;
   }
   .window[open] {
@@ -264,7 +264,7 @@ dialog::backdrop {
     padding: 30px 42px;
     gap: 30px;
   }
-  .window-button{
+  .window-button {
     padding: 12.5px 114.5px;
   }
 }
