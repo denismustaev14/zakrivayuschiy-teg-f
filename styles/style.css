@@ -75,7 +75,7 @@
   font-family: var(--accent-font);
   font-variation-settings: "wght" var(--fat-font-weight);
   font-size: 18px;
-  padding: 3px 10px;
+  padding: 4.5px 10px;
   width: 100%;
   border-block-end: 2px solid var(--main-border-color);
 }
@@ -93,8 +93,8 @@
     1px 0 var(--main-bg-color), 0 -1px var(--main-bg-color);
   mix-blend-mode: hard-light;
 }
-@supports (text-stroke: 0.5px var(--main-bg-color)) or
-  (-webkit-text-stroke: 0.5px var(--main-bg-color)) {
+@supports (text-stroke: 1px var(--main-bg-color)) or
+  (-webkit-text-stroke: 1px var(--main-bg-color)) {
   .card-image-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--main-bg-color);
@@ -108,16 +108,17 @@
   overflow: hidden;
   aspect-ratio: 1;
 }
-.card-text {
+.card-text-wrap {
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
-.text {
-  margin-block-end: 27px;
-}
+
 .card-button {
   display: flex;
   justify-content: flex-end;
@@ -235,11 +236,11 @@ dialog::backdrop {
 
 @media (width <= 376px) {
   .header-title {
-    font-size: 49px;
+    font-size:  clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
     margin-block-start: 120px;
   }
   .header-text {
-    font-size: 14px;
+    font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
     margin-block-end: 120px;
   }
   .card-text {

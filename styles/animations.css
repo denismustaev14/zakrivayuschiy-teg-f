@@ -15,7 +15,7 @@
 }
 .card__icon-button:hover .main-body {
   fill: var(--contour-color);
-  transition: fill linear 0.3s 0.05s;
+  transition: fill linear 0.3s 0.03s;
 }
 .card__icon-button:not(:hover) .core {
   fill: transparent;
@@ -31,7 +31,7 @@
 }
 .card__icon-button:active .main-body {
   fill: var(--main-body-color);
-  transition: fill linear 0.3s 0.06s;
+  transition: fill linear 0.3s 0.05s;
 }
 .card__icon-button .is-liked {
   animation: 1 ease-in 0.3s 0.1s alternate;
@@ -42,7 +42,7 @@
 }
 .card__icon-button .is-liked .main-body {
   fill: var(--main-body-color);
-  transition: fill linear 0.3s 0.06s;
+  transition: fill linear 0.3s 0.05s;
 }
 .card__icon-button .is-liked .core {
   fill: var(--main-body-color);
